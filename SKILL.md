@@ -13,6 +13,10 @@ description: '在 JetBrains IDEA 当前项目中使用 IDEA MCP 完成源码理�
 
 仅维护本 skill、处理普通文档或执行不依赖 IDEA 项目语义的元任务时可使用普通文件系统工具；不得用此例外绕过项目开发任务的 IDEA 门禁。
 
+## 执行授权总则
+
+未经用户对具体命令或明确范围的要求或确认，不得执行任何不能可靠限定到本次变更文件的全量命令，包括项目级或模块级编译、构建、测试、lint、类型检查、全局 inspection、代码审查、扫描、服务启动及其 package manager script、IDEA 运行配置或包装入口。脚本按展开后的实际行为和作用范围分类，不按名称、耗时或是否只读分类；无法查明或证明为文件级时按全量命令处理。“完成验证”“检查一下”“按开发闭环处理”或仅使用本 skill 不构成上述授权。具体边界见 [execution-validation.md](references/execution-validation.md)。
+
 ## 路由
 
 - 源码理解、定位、调用与影响分析、Bug 排查或准备修改：读 [context-reading.md](references/context-reading.md)。
