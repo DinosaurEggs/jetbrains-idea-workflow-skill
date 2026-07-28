@@ -9,7 +9,7 @@ description: '在 JetBrains IDEA 当前项目中使用 IDEA MCP 完成源码理�
 
 ## 入口
 
-项目开发任务先完整读取 [core-workflow.md](references/core-workflow.md)。首次访问项目源码、符号、依赖、工作区、编辑、inspection、运行配置、数据库或调试能力前，读取并应用 [idea-mcp-gate.md](references/idea-mcp-gate.md)。
+项目开发任务先完整读取 [core-workflow.md](references/core-workflow.md)。首次调用 IDEA MCP，或访问项目源码、符号、依赖、工作区、编辑、inspection、运行配置、数据库或调试能力前，读取并应用 [idea-mcp-gate.md](references/idea-mcp-gate.md)。门禁通过后，首次通过 `mcp__idea__execute_tool` 构造子工具 `command` 前完整读取 [idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)。
 
 仅维护本 skill、处理普通文档或执行不依赖 IDEA 项目语义的元任务时可使用普通文件系统工具；不得用此例外绕过项目开发任务的 IDEA 门禁。
 
