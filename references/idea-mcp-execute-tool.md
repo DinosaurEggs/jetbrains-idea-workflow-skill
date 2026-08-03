@@ -73,6 +73,5 @@ apply_patch --input "*** Begin Patch
 
 ## 终端与版本控制
 
-- `execute_terminal_command --command "Get-Location" --executeInShell true --timeout 10000 --maxLinesCount 20`：内部命令在 IDE 终端执行；运行、删除、安装和 Git 写操作仍按实际行为授权。
 - `get_repositories`：读取项目 VCS 根，多仓库项目先确定目标仓库；不能单独作为所有项目的通用身份依据。
 - `git_status`：编辑、构建或测试前后记录 staged、unstaged、untracked 和冲突状态，不自动回退用户改动。
