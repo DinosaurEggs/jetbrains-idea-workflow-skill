@@ -9,7 +9,15 @@ description: '在 JetBrains IDEA 当前项目中使用 IDEA MCP 完成源码理�
 
 ## 入口
 
-项目开发任务先完整读取 [core-workflow.md](references/core-workflow.md)。首次调用 IDEA MCP，或访问项目源码、符号、依赖、工作区、编辑、inspection、运行配置、数据库或调试能力前，读取并应用 [idea-mcp-gate.md](references/idea-mcp-gate.md)。门禁通过后，首次通过 `mcp__idea__execute_tool` 构造子工具 `command` 前完整读取 [idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)。
+项目开发任务先完整读取 [core-workflow.md](references/core-workflow.md)。首次调用 IDEA
+MCP，或访问项目源码、符号、依赖、工作区、编辑、inspection、运行配置、数据库或调试能力前，读取并应用 [idea-mcp-gate.md](references/idea-mcp-gate.md)
+；直接以首个任务相关的 IDEA MCP 调用完成状态门禁，不另做 bootstrap 预检。首次通过 `mcp__idea__execute_tool` 构造子工具
+`command` 前完整读取 [idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)。
+
+构造 `command` 时只使用 [idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)
+明确列出的子工具和参数契约。逐字复制工具名及参数名，不翻译、不缩写、不把 camelCase、snake_case
+或单复数形式相互转换，也不依据相邻工具推断参数。每次调用前核对必填项、类型、数组或对象格式、条件组合和外层 `projectPath`
+；参数错误只按已读契约或返回中明确指出的缺失项、未知项及类型修正，不试探其他拼写或清单外工具。
 
 仅维护本 skill、处理普通文档或执行不依赖 IDEA 项目语义的元任务时可使用普通文件系统工具；不得用此例外绕过项目开发任务的 IDEA 门禁。
 
