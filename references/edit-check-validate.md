@@ -21,7 +21,7 @@
 
 ## 静态检查闭环
 
-执行 IDEA 格式化或 inspection 前先满足 IDEA MCP 状态门禁。完成一轮编辑后：
+执行 IDEA 格式化或 inspection 前使用 IDEA MCP。完成一轮编辑后：
 
 1. 只格式化本轮新增或修改的文件；不要格式化其他文件。
 2. 对全部变更文件执行适用的 IDEA inspection，以及 [execution-validation.md](execution-validation.md)

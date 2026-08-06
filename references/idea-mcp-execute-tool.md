@@ -1,7 +1,11 @@
 # IDEA MCP execute_tool 命令参考
 
-按需使用本文件，首个任务相关调用同时完成状态门禁。IDEA 子工具均通过 `mcp__idea__execute_tool` 调用，以下示例除首例外均只写
-`command` 内容；统一入口、`projectPath` 和结果判定见 [idea-mcp-gate.md](idea-mcp-gate.md)。
+按需使用本文件。IDEA 子工具均通过 `mcp__idea__execute_tool` 调用，以下示例除首例外均只写
+`command` 内容；统一入口、`projectPath` 和参数契约以本文件为准。
+
+结果判定必须同时检查统一入口和子工具结果：外层 `isError=true`、子工具 `errorMessage` 非空、`timedOut=true`、明确的 timeout、
+`isSuccess=false`、非零退出码或补丁未全部 applied 均表示失败或未完成；`problems` 中的问题、`more`、`notAnalyzedReason`、
+截断、缺少退出状态或部分批次表示结果不完整。工具调用成功不等于检查通过，warning 也不等于通过。
 
 ```javascript
 await tools.mcp__idea__execute_tool({

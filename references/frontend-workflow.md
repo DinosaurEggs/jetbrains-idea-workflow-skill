@@ -7,7 +7,7 @@
 - 涉及 Vue 页面、组件、指令、composable、store 或 Vue 工具链时，追加应用 [vue-workflow.md](vue-workflow.md)。
 - 新建页面或组件、视觉重构、样式美化、品牌体验或用户明确要求提升设计质量时，追加应用 [frontend-design-quality.md](frontend-design-quality.md)。
 - 格式化、inspection、lint、类型检查、构建、测试、启动、浏览器或截图操作统一应用 [execution-validation.md](execution-validation.md)。
-- 需要 IDEA 项目能力时先应用 [idea-mcp-gate.md](idea-mcp-gate.md)；门禁异常时不得用终端或其他工具降级继续依赖项目能力的工作。
+- 涉及项目语义时使用 IDEA MCP，并使用 CodeGraph 辅助读取和定位上下文；CodeGraph 结果由 IDEA MCP 复核。
 
 ## 定位与上下文
 

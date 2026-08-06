@@ -36,4 +36,5 @@
 
 检查发现问题后是否修改代码，按 [execution-validation.md](execution-validation.md) 区分纯验证任务与已授权修复任务；修复后重新格式化并复查受影响文件。
 
-需要通过终端运行项目现有文件级检查时，IDEA MCP 必须处于 [idea-mcp-gate.md](idea-mcp-gate.md) 规定的正常状态，且所选方式须符合项目现有工具链。IDEA MCP 连接、插件或当前项目异常时不得用终端降级。
+需要通过终端运行项目现有文件级检查时，项目语义和检查范围应先使用 IDEA MCP 确认，且所选方式须符合项目现有工具链；CodeGraph
+可用于辅助定位上下文。

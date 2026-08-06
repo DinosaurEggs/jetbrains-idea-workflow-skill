@@ -2,9 +2,10 @@
 
 本文件统一规定格式化、inspection、lint、类型检查、构建、测试、运行、浏览器、截图和长任务的授权、执行边界与结果判定。
 
-## IDEA MCP 门禁
+## 项目工具使用
 
-需要项目源码、inspection、运行配置、构建或执行能力时，先应用 [idea-mcp-gate.md](idea-mcp-gate.md)。IDEA MCP 未连接、插件异常、当前项目不匹配或必需能力不可用时，按该门禁暂停；不得改用终端、普通文件系统、其他 MCP、其他 IDE 或替代实现继续依赖该能力的工作。
+需要项目源码、inspection、运行配置、构建或执行能力时使用 IDEA MCP，并使用 CodeGraph 辅助读取和定位上下文。CodeGraph
+仅用于确定候选，不替代 IDEA MCP 对关键源码、配置和检查结果的复核。
 
 ## 授权判定
 
