@@ -30,7 +30,12 @@ MCP，或访问项目源码、符号、依赖、工作区、编辑、inspection�
 - 源码理解、定位、调用与影响分析、Bug 排查或准备修改：读 [context-reading.md](references/context-reading.md)。
 - 修改或新增项目文件：读 [edit-check-validate.md](references/edit-check-validate.md)。
 - 数据库、SQL、持久化层、ORM、Mapper、DAO、Repository、字段、字典、权限数据或数据异常：读 [database-sql.md](references/database-sql.md)。
-- 跨模块功能、契约、前后端联动、公共能力、核心流程或其他实质性设计：读 [design-first.md](references/design-first.md)；需要系统功能或详细设计正文时追加 [system-function-design.md](references/system-function-design.md)。
+- 方案比选、方向调整与确认：读 [design-first.md](references/design-first.md)。
+- 用户要求系统功能设计或系统详细设计：先应用 [design-first.md](references/design-first.md)
+  ，方向明确后完整读取并严格按 [system-function-design.md](references/system-function-design.md) 的固定正文输出。
+- 用户要求开发计划、开发方案、修改方案或技术实现计划：先应用 [design-first.md](references/design-first.md)
+  ，方向明确后完整读取并严格按 [development-plan.md](references/development-plan.md) 的正文格式输出。
+- 系统功能设计与开发计划相互独立，只完成用户当前要求的任务，不自动从一种任务进入另一种任务或代码实施。
 - 前端任务：读 [frontend-workflow.md](references/frontend-workflow.md)；Vue 任务追加 [vue-workflow.md](references/vue-workflow.md)；新界面、视觉重构、样式或体验提升追加 [frontend-design-quality.md](references/frontend-design-quality.md)。
 - 编译、构建、测试、启动、浏览器、截图、长任务或运行依赖问题：读 [execution-validation.md](references/execution-validation.md)。
 - 删除、不可逆操作、数据库写入、依赖或环境变更、持久化 IDE 配置、部署、发布、Git commit/push 或 CI/CD：读 [high-risk-confirmation.md](references/high-risk-confirmation.md)。
@@ -44,4 +49,4 @@ MCP，或访问项目源码、符号、依赖、工作区、编辑、inspection�
 - 仍有阻塞时，只说明事实、证据、影响和所需确认，不使用完成总结。
 - 已完成时，说明结果、主要文件、实际验证范围及相关影响或风险。
 - 超时、未分析、输出不完整、缺少退出状态或只覆盖局部时，不得扩大表述为通过。
-- 只交付系统功能或详细设计时，直接使用固定正文格式，不外套通用总结。
+- 只交付系统功能设计或开发计划时，直接使用对应 reference 的正文格式，不外套通用总结。
