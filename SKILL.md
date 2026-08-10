@@ -9,8 +9,9 @@ description: '在 JetBrains IDEA 当前项目中使用 IDEA MCP 完成源码理�
 
 ## 入口
 
-项目开发任务先完整读取 [core-workflow.md](references/core-workflow.md)
-。涉及项目源码、符号、依赖、工作区、编辑、inspection、运行配置、数据库或调试能力时，必须使用 IDEA MCP，并使用 CodeGraph
+处理本 skill 范围内的问题、要求或任务时，先完整读取 [core-workflow.md](references/core-workflow.md)
+，按其中的“问题审查与证据表达”检查前提、逻辑、信息和证据，再进入任务路由。涉及项目源码、符号、依赖、工作区、编辑、inspection、运行配置、数据库或调试能力时，必须使用
+IDEA MCP，并使用 CodeGraph
 辅助读取和定位上下文。首次通过 `mcp__idea__execute_tool` 构造子工具
 `command` 前完整读取 [idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)。
 
