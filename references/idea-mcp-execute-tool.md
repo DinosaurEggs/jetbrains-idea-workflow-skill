@@ -3,6 +3,9 @@
 按需使用本文件。IDEA 子工具均通过 `mcp__idea__execute_tool` 调用，以下示例除首例外均只写
 `command` 内容；统一入口、`projectPath` 和参数契约以本文件为准。
 
+首次构造本文件中的 `command`，或准备修正、替换、重试失败或不完整的 `command` 前，必须完整读取
+[command-execution-reliability.md](command-execution-reliability.md)；同一对话已经完整读取且文件未变化时直接复用。
+
 结果判定必须同时检查统一入口和子工具结果：外层 `isError=true`、子工具 `errorMessage` 非空、`timedOut=true`、明确的 timeout、
 `isSuccess=false`、非零退出码或补丁未全部 applied 均表示失败或未完成；`problems` 中的问题、`more`、`notAnalyzedReason`、
 截断、缺少退出状态或部分批次表示结果不完整。工具调用成功不等于检查通过，warning 也不等于通过。

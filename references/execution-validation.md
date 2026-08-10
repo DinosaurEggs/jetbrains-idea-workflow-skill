@@ -2,6 +2,9 @@
 
 本文件统一规定格式化、inspection、lint、类型检查、构建、测试、运行、浏览器、截图和长任务的授权、执行边界与结果判定。
 
+首次执行本文件范围内的入口，或准备处理参数错误、非零退出码、超时、取消、截断、缺少退出状态或结果不完整的命令前，必须完整读取
+[command-execution-reliability.md](command-execution-reliability.md)；同一对话已经完整读取且文件未变化时直接复用。
+
 ## 项目工具使用
 
 需要项目源码、inspection、运行配置、构建或执行能力时使用 IDEA MCP，并使用 CodeGraph 辅助读取和定位上下文。CodeGraph

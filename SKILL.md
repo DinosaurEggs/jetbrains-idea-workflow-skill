@@ -13,7 +13,8 @@ description: '在 JetBrains IDEA 当前项目中使用 IDEA MCP 完成源码理�
 ，按其中的“问题审查与证据表达”检查前提、逻辑、信息和证据，再进入任务路由。涉及项目源码、符号、依赖、工作区、编辑、inspection、运行配置、数据库或调试能力时，必须使用
 IDEA MCP，并使用 CodeGraph
 辅助读取和定位上下文。首次通过 `mcp__idea__execute_tool` 构造子工具
-`command` 前完整读取 [idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)。
+`command` 前完整读取 [command-execution-reliability.md](references/command-execution-reliability.md) 和
+[idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)。
 
 构造 `command` 时只使用 [idea-mcp-execute-tool.md](references/idea-mcp-execute-tool.md)
 明确列出的子工具和参数契约。逐字复制工具名及参数名，不翻译、不缩写、不把 camelCase、snake_case
@@ -22,6 +23,10 @@ IDEA MCP，并使用 CodeGraph
 
 仅维护本 skill、处理普通文档或执行不依赖 IDEA 项目语义的元任务时可使用普通文件系统工具；不得用此例外绕过项目开发任务的
 IDEA MCP 和 CodeGraph 使用要求。
+
+首次准备执行终端命令、脚本、运行配置、格式化、检查、构建、测试或 SQL 前，也必须完整读取
+[command-execution-reliability.md](references/command-execution-reliability.md)
+。命令返回参数错误、非零退出码、超时、取消、截断、缺少退出状态或结果不完整时，在修正、替换或重试前按该文件处理。同一对话已经完整读取且文件未变化时直接复用。
 
 ## 执行授权总则
 
