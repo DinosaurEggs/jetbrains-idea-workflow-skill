@@ -1,4 +1,4 @@
 interface:
   display_name: "JetBrains IDEA 开发工作流"
   short_description: "通过 IDEA MCP 完成项目分析、开发、数据库操作与验证闭环"
-  default_prompt: "使用 $jetbrains-idea-workflow，在当前任务明确范围内按需调用 IDEA MCP 和 CodeGraph，依据项目证据完成用户要求的分析、设计、修改或验证，并遵守文件级检查、非文件级执行和高风险确认边界。"
+  default_prompt: "使用 $jetbrains-idea-workflow，基于当前 IDEA 项目完成任务；需要修改时，先输出适用的完整方案并取得确认和实施授权，再修改和验证。"
